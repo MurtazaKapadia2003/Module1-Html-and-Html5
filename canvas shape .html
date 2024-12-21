@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas shape</title>
+</head>
+<body>
+    <h2>Shapes on Canvas</h2>
+
+    <canvas id="myCanvas" width="200" height="200" style="border:1px solid black;"></canvas>
+
+  <script>
+    // Get the canvas element and context
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+
+    // Draw a square (width: 100px, height: 100px, at (300, 50))
+    Ctx.fillStyle = "Red"; // Set fill color
+    Ctx.fillRect(50, 50, 100, 100); // Draw square
+
+    // Draw a circle (radius: 50px, center at (150, 300))
+    Ctx.fillStyle = "Blue"; // Set fill color
+    Ctx.beginpath(); // Begin drawing path
+    Ctx.arc(100, 100, 50, 0, 2 * Math.PI); // Draw circle
+    Ctx.fill(); // Fill the circle with the current fill color
+    
+    // Draw a rectangle (width: 200px, height: 100px, at (50,50))
+    Ctx.fillStyle = "Green"; // Set fill color
+    Ctx.fillRect(50, 50, 200, 100); // Draw square
+  </script>
+
+</body>
+</html>
